@@ -1,0 +1,248 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #387dfe;
+
+	main {
+		max-width: 425px;
+		background-color: #fff;
+		height: auto;
+		width: 100%;
+		overflow-x: hidden;
+		section {
+			.container {
+				margin: 0 20px;
+				width: auto;
+			}
+			.hero {
+				height: fit-content;
+				position: relative;
+				.awan {
+					position: absolute;
+					content: "";
+					bottom: -10%;
+					left: 0;
+					width: 100%;
+					z-index: 7;
+				}
+				.logo {
+					position: absolute;
+					content: "";
+					top: 5%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 94px;
+					z-index: 7;
+				}
+				.fb {
+					position: absolute;
+					content: "";
+					top: -40%;
+					right: -55%;
+					transform: translateY(10%);
+					width: 150%;
+					z-index: 5;
+					animation: fb 1s ease-in-out forwards;
+					animation-delay: 0.5s;
+					scale: 0;
+					@keyframes fb {
+						0% {
+							scale: 0;
+						}
+						50% {
+							scale: 1.2;
+						}
+						100% {
+							scale: 1;
+						}
+					}
+				}
+				.cw {
+					position: absolute;
+					content: "";
+					bottom: 5%;
+					left: -40%;
+					width: 100vw;
+					@media screen and (min-width: 1200px) {
+						width: 400px;
+					}
+					z-index: 5;
+					animation: cw 1s ease-in-out forwards;
+					transform-origin: bottom;
+					animation-delay: 0.8s;
+					scale: 0;
+					@keyframes cw {
+						0% {
+							scale: 0;
+							transform: rotate(-20deg);
+						}
+						50% {
+							scale: 1.2;
+							transform: rotate(10deg);
+						}
+						100% {
+							scale: 1;
+							transform: rotate(0);
+						}
+					}
+				}
+				.bintang {
+					position: absolute;
+					content: "";
+					top: 28%;
+					left: 60%;
+					transform: translate(-50%, -50%);
+					width: 58px;
+					z-index: 5;
+					animation: bintang 1s ease-in-out forwards;
+					transform-origin: bottom;
+					animation-delay: 1.8s;
+					scale: 0;
+					@keyframes bintang {
+						0% {
+							scale: 0;
+						}
+						50% {
+							scale: 1.2;
+						}
+						100% {
+							scale: 1;
+						}
+					}
+				}
+				.text {
+					position: absolute;
+					content: "";
+					top: 35%;
+					left: 70%;
+					transform: translateX(-50%);
+					width: 20.6vh;
+					z-index: 5;
+					animation: text 1s ease-in-out forwards;
+					transform-origin: bottom;
+					animation-delay: 2s;
+					scale: 0;
+					@keyframes text {
+						0% {
+							scale: 0;
+						}
+						50% {
+							scale: 1.2;
+						}
+						100% {
+							scale: 1;
+						}
+					}
+				}
+			}
+			.sec1 {
+				margin-top: 180px;
+				margin-bottom: 100px;
+			}
+			.sec4 {
+				.header {
+					margin-top: 70px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.sec5 {
+				background-color: #001d54;
+				padding: 50px 0;
+			}
+			.sec6 {
+				background: linear-gradient(196deg, #387dfe -0.53%, #2abcf5 98.56%);
+				padding: 50px 0;
+			}
+			.sec7 {
+				padding: 50px 0;
+			}
+			.sec8 {
+				background: #001d54;
+				padding: 100px 0;
+			}
+			.sec9 {
+				padding: 50px 0;
+				background: linear-gradient(196deg, #387dfe -0.53%, #2abcf5 98.56%);
+				.plan {
+					background-color: #fff;
+					border-radius: 16px;
+				}
+			}
+			.sec10 {
+				background: #001d54;
+				padding: 50px 0;
+			}
+			.faq {
+				padding: 50px 0;
+			}
+			.help {
+				padding: 70px 0;
+			}
+		}
+	}
+}
+
+img {
+	width: 100%;
+}
+
+.btn-group {
+	margin-top: 50px;
+	a {
+		border-radius: 8px;
+		background: #001d54;
+		display: inline-flex;
+		padding: 20px 32px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		width: fit-content;
+		i {
+			color: #fff;
+			font-size: 24px;
+		}
+		span {
+			color: #fff;
+			text-align: center;
+			font-family: "Plus Jakarta Sans";
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+		}
+		&:hover {
+			background: #0043c0;
+		}
+	}
+}
+.light {
+	margin-top: 50px;
+	a {
+		border-radius: 8px;
+		background: #fff;
+		display: inline-flex;
+		padding: 20px 32px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		i {
+			color: #001d54;
+			font-size: 24px;
+		}
+		span {
+			color: #001d54;
+			text-align: center;
+			font-family: "Plus Jakarta Sans";
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+		}
+		&:hover {
+			background: #0043c0;
+		}
+	}
+}

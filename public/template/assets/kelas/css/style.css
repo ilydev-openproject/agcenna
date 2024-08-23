@@ -1,0 +1,248 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #387dfe;
+}
+body main {
+  max-width: 425px;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+body main section .container {
+  margin: 0 20px;
+  width: auto;
+}
+body main section .hero {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+body main section .hero .awan {
+  position: absolute;
+  content: "";
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  z-index: 7;
+}
+body main section .hero .logo {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94px;
+  z-index: 7;
+}
+body main section .hero .fb {
+  position: absolute;
+  content: "";
+  top: -40%;
+  right: -55%;
+  transform: translateY(10%);
+  width: 150%;
+  z-index: 5;
+  animation: fb 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  scale: 0;
+}
+@keyframes fb {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+body main section .hero .cw {
+  position: absolute;
+  content: "";
+  bottom: 5%;
+  left: -40%;
+  width: 100vw;
+  z-index: 5;
+  animation: cw 1s ease-in-out forwards;
+  transform-origin: bottom;
+  animation-delay: 0.8s;
+  scale: 0;
+}
+@media screen and (min-width: 1200px) {
+  body main section .hero .cw {
+    width: 400px;
+  }
+}
+@keyframes cw {
+  0% {
+    scale: 0;
+    transform: rotate(-20deg);
+  }
+  50% {
+    scale: 1.2;
+    transform: rotate(10deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotate(0);
+  }
+}
+body main section .hero .bintang {
+  position: absolute;
+  content: "";
+  top: 28%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  z-index: 5;
+  animation: bintang 1s ease-in-out forwards;
+  transform-origin: bottom;
+  animation-delay: 1.8s;
+  scale: 0;
+}
+@keyframes bintang {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+body main section .hero .text {
+  position: absolute;
+  content: "";
+  top: 35%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 20.6vh;
+  z-index: 5;
+  animation: text 1s ease-in-out forwards;
+  transform-origin: bottom;
+  animation-delay: 2s;
+  scale: 0;
+}
+@keyframes text {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+body main section .sec1 {
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+body main section .sec4 .header {
+  margin-top: 70px;
+}
+body main section .sec4 .header img {
+  width: 100%;
+}
+body main section .sec5 {
+  background-color: #001d54;
+  padding: 50px 0;
+}
+body main section .sec6 {
+  background: linear-gradient(196deg, #387dfe -0.53%, #2abcf5 98.56%);
+  padding: 50px 0;
+}
+body main section .sec7 {
+  padding: 50px 0;
+}
+body main section .sec8 {
+  background: #001d54;
+  padding: 100px 0;
+}
+body main section .sec9 {
+  padding: 50px 0;
+  background: linear-gradient(196deg, #387dfe -0.53%, #2abcf5 98.56%);
+}
+body main section .sec9 .plan {
+  background-color: #fff;
+  border-radius: 16px;
+}
+body main section .sec10 {
+  background: #001d54;
+  padding: 50px 0;
+}
+body main section .faq {
+  padding: 50px 0;
+}
+body main section .help {
+  padding: 70px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-group {
+  margin-top: 50px;
+}
+.btn-group a {
+  border-radius: 8px;
+  background: #001d54;
+  display: inline-flex;
+  padding: 20px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn-group a i {
+  color: #fff;
+  font-size: 24px;
+}
+.btn-group a span {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.btn-group a:hover {
+  background: #0043c0;
+}
+
+.light {
+  margin-top: 50px;
+}
+.light a {
+  border-radius: 8px;
+  background: #fff;
+  display: inline-flex;
+  padding: 20px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.light a i {
+  color: #001d54;
+  font-size: 24px;
+}
+.light a span {
+  color: #001d54;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.light a:hover {
+  background: #0043c0;
+}
